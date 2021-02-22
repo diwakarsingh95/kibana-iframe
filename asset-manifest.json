@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/kibana-iframe/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/kibana-iframe/static/js/main.abe7da85.chunk.js",
+    "main.js.map": "/kibana-iframe/static/js/main.abe7da85.chunk.js.map",
+    "runtime-main.js": "/kibana-iframe/static/js/runtime-main.54138887.js",
+    "runtime-main.js.map": "/kibana-iframe/static/js/runtime-main.54138887.js.map",
+    "static/js/2.35462b1b.chunk.js": "/kibana-iframe/static/js/2.35462b1b.chunk.js",
+    "static/js/2.35462b1b.chunk.js.map": "/kibana-iframe/static/js/2.35462b1b.chunk.js.map",
+    "static/js/3.469efac1.chunk.js": "/kibana-iframe/static/js/3.469efac1.chunk.js",
+    "static/js/3.469efac1.chunk.js.map": "/kibana-iframe/static/js/3.469efac1.chunk.js.map",
+    "index.html": "/kibana-iframe/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/kibana-iframe/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.35462b1b.chunk.js.LICENSE.txt": "/kibana-iframe/static/js/2.35462b1b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.54138887.js",
+    "static/js/2.35462b1b.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.abe7da85.chunk.js"
+  ]
+}
