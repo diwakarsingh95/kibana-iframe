@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/kibana-iframe/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/kibana-iframe/static/js/main.7412624e.chunk.js",
-    "main.js.map": "/kibana-iframe/static/js/main.7412624e.chunk.js.map",
+    "main.js": "/kibana-iframe/static/js/main.caeb7b1b.chunk.js",
+    "main.js.map": "/kibana-iframe/static/js/main.caeb7b1b.chunk.js.map",
     "runtime-main.js": "/kibana-iframe/static/js/runtime-main.54138887.js",
     "runtime-main.js.map": "/kibana-iframe/static/js/runtime-main.54138887.js.map",
     "static/js/2.35462b1b.chunk.js": "/kibana-iframe/static/js/2.35462b1b.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.54138887.js",
     "static/js/2.35462b1b.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.7412624e.chunk.js"
+    "static/js/main.caeb7b1b.chunk.js"
   ]
 }
