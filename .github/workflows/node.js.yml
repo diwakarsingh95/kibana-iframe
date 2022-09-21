@@ -32,6 +32,12 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
       - name: Set Environment Variables
         env:
           REACT_APP_COGNITO_USER_POOL_ID: ${{ secrets.REACT_APP_COGNITO_USER_POOL_ID }}
@@ -39,12 +45,6 @@ jobs:
           REACT_APP_COGNITO_AUTH_DOMAIN: ${{ secrets.REACT_APP_COGNITO_AUTH_DOMAIN }}
           REACT_APP_REDIRECT_SIGNIN: ${{ secrets.REACT_APP_REDIRECT_SIGNIN }}
           REACT_APP_REDIRECT_SIGNOUT: ${{ secrets.REACT_APP_REDIRECT_SIGNOUT }}
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
       - run: env
       - run: npm ci
       - name: REACT_APP_COGNITO_USER_POOL_ID
