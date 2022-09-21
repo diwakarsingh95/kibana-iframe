@@ -38,13 +38,13 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - name: Set Environment Variables
-        env:
-          REACT_APP_COGNITO_USER_POOL_ID: ${{ secrets.REACT_APP_COGNITO_USER_POOL_ID }}
-          REACT_APP_COGNITO_USER_POOL_WEBCLIENT_ID: ${{ secrets.REACT_APP_COGNITO_USER_POOL_WEBCLIENT_ID }}
-          REACT_APP_COGNITO_AUTH_DOMAIN: ${{ secrets.REACT_APP_COGNITO_AUTH_DOMAIN }}
-          REACT_APP_REDIRECT_SIGNIN: ${{ secrets.REACT_APP_REDIRECT_SIGNIN }}
-          REACT_APP_REDIRECT_SIGNOUT: ${{ secrets.REACT_APP_REDIRECT_SIGNOUT }}
+#       - name: Set Environment Variables
+#         env:
+#           REACT_APP_COGNITO_USER_POOL_ID: ${{ secrets.REACT_APP_COGNITO_USER_POOL_ID }}
+#           REACT_APP_COGNITO_USER_POOL_WEBCLIENT_ID: ${{ secrets.REACT_APP_COGNITO_USER_POOL_WEBCLIENT_ID }}
+#           REACT_APP_COGNITO_AUTH_DOMAIN: ${{ secrets.REACT_APP_COGNITO_AUTH_DOMAIN }}
+#           REACT_APP_REDIRECT_SIGNIN: ${{ secrets.REACT_APP_REDIRECT_SIGNIN }}
+#           REACT_APP_REDIRECT_SIGNOUT: ${{ secrets.REACT_APP_REDIRECT_SIGNOUT }}
       - run: env
       - run: npm ci
       - name: REACT_APP_COGNITO_USER_POOL_ID
