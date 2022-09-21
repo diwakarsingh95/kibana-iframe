@@ -32,6 +32,13 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
+      - name: Set Environment Variables
+        env:
+          REACT_APP_COGNITO_USER_POOL_ID: ${{ secrets.REACT_APP_COGNITO_USER_POOL_ID }}
+          REACT_APP_COGNITO_USER_POOL_WEBCLIENT_ID: ${{ secrets.REACT_APP_COGNITO_USER_POOL_WEBCLIENT_ID }}
+          REACT_APP_COGNITO_AUTH_DOMAIN: ${{ secrets.REACT_APP_COGNITO_AUTH_DOMAIN }}
+          REACT_APP_REDIRECT_SIGNIN: ${{ secrets.REACT_APP_REDIRECT_SIGNIN }}
+          REACT_APP_REDIRECT_SIGNOUT: ${{ secrets.REACT_APP_REDIRECT_SIGNOUT }}
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
@@ -42,7 +49,7 @@ jobs:
       - run: npm ci
       - name: REACT_APP_COGNITO_USER_POOL_ID
         ## Reference your environment variables
-        run: echo "The API key is:${{secrets.REACT_APP_COGNITO_USER_POOL_ID}}" 
+        run: echo "The API key is:${{env.REACT_APP_COGNITO_USER_POOL_ID}}" 
       - run: npm test -- --passWithNoTests
       - run: npm run build
       - name: Upload artifact
