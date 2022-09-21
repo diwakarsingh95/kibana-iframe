@@ -45,11 +45,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - run: env
       - run: npm ci
-      - name: REACT_APP_COGNITO_USER_POOL_ID
-        ## Reference your environment variables
-        run: echo "The API key is:${{env.REACT_APP_COGNITO_USER_POOL_ID}}" 
       - run: npm test -- --passWithNoTests
       - run: npm run build
       - name: Upload artifact
