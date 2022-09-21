@@ -38,6 +38,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
+      - run: env
       - run: npm ci
       - run: npm test -- --passWithNoTests
       - run: npm run build
